@@ -111,3 +111,22 @@ EX) 큰 'ㄱ'자 그리기
       t1.forward(100)
       t1.pencolor(0, 0, 255)    //파란색
       t1.forward(100)
+
+4. 거북이 속도 조절하기
+   -> speed() 명령 사용 : 1 ~ 10 까지의 값으로 전달한다.
+   -> import turtle
+      win = turtle.Screen()
+      t1 = turtle.Turtle()
+      t1.speed(1)
+      t1.forward(100)
+      
+5. 마우스 버튼 클릭으로 프로그램 종료하기
+   -> exitonclick() 명령 사용 
+   -> EX) 'ㄱ'자를 그리고 사용자가 마우스의 왼쪽 버튼을 클릭하면 종료
+          import turtle
+          win = turtle.Screen()
+          t1 = turtle.Turtle()
+          t1.forward(100)
+          t1.right(90)
+          t1.forward(100)
+          win.exitonclick()
