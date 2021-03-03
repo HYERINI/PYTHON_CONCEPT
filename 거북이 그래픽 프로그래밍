@@ -65,7 +65,7 @@ EX) win = turtle.Screen()      //캔버스 윈도우 생성을 요청하고 이�
                       - classic : 화살표 모양. 처음 거북이 그래픽을 사용해서 거북이 로봇을 생성하면 나타나는 모양
  2. 거북이 움직이기
     -> import turtle
-       win = turtlel.Screen()
+       win = turtle.Screen()
        t1 = turtle.Turtle()
        t1.forward(100)    //t1이라는 거북이에게 현재 향하고 있는 방향으로 100만큼 이동하라는 명령
        t1.left(90)        //t1이라는 거북이에게 현재 바라보고 있는 방향으로부터 반시계 방향으로 90도만큼 회전하라는 명령
