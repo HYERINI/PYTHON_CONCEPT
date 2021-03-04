@@ -130,3 +130,31 @@ EX) 큰 'ㄱ'자 그리기
           t1.right(90)
           t1.forward(100)
           win.exitonclick()
+
+6. 캔버스 윈도우에 이미지 파일 보여주기
+   -> bgpic() 명령 사용 
+   -> EX) import turtle
+          win = turtle.Screen()      // 윈도우 생성 후 win이라고 이름 붙임
+          win.bgpic("mymaze.gif")    // 배경화면을 "mymaze.gif"라는 이미지 파일로 지정
+          
+7. 캔버스 윈도우 크기 알아보기
+   -> window_width() : 캔버스를 감싸고 있는 윈도우의 너비를 반환
+   -> window_height() : 캔버스를 감싸고 있는 윈도우의 높이를 반환
+   -> EX) import turtle
+          win = turtle.Screen()          // 윈도우의 너비를 요청해서 width 변수에 넣음
+          height = win.window_height()   // 높이를 요청해서 height 변수에 넣음
+          print("width: ", width)        // 너비를 화면에 출력
+          print("height: ", height)      // 높이를 화면에 출력
+          
+ 8. 캔버스 윈도우 크기 조정하기
+    -> setup() 명령 사용
+    -> EX) import turtle
+           win = turtle.Screen()
+           win.setup(400, 450)           // 윈도우의 크기를 400(너비), 450(높이) 화소로 지정
+           
+ 9. 거북이 로봇의 펜을 제어해서 그림 그릴 지 말지 정하기 제어하기
+    -> penup() 명령 : 거북이 로봇이 이동할 때 그림을 그리지 않도록 함
+    -> pendown() 명령 : 거북이 로봇을 이동할 때 그 궤적을 따라 그림을 그림
+    
+10. 거북이 로봇 이동시키기
+    -> 상대적 이동 : 
