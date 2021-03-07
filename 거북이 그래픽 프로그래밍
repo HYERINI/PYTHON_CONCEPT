@@ -57,12 +57,8 @@ EX) win = turtle.Screen()      //캔버스 윈도우 생성을 요청하고 이�
       t1 = turtle.Turtle()
       
       t1.shape("turtle")
-   -> 거북이 모양 종류 - arrow : 삼각형 모양
-                      - turtle : 거북이 모양
-                      - circle : 원 모양
-                      - square : 사각형 모양
-                      - triangle : 삼각형 모양
-                      - classic : 화살표 모양. 처음 거북이 그래픽을 사용해서 거북이 로봇을 생성하면 나타나는 모양
+   -> 거북이 모양 종류 : arrow(삼각형), turtle, circle, square, triangle, classic(화살표)
+                      
  2. 거북이 움직이기
     -> import turtle
        win = turtle.Screen()
@@ -71,7 +67,7 @@ EX) win = turtle.Screen()      //캔버스 윈도우 생성을 요청하고 이�
        t1.left(90)        //t1이라는 거북이에게 현재 바라보고 있는 방향으로부터 반시계 방향으로 90도만큼 회전하라는 명령
        t1.right(90)       //t1이라는 거북이에게 현재 바라보고 있는 방향으로부터 시계 방향으로 90도만큼 회전하라는 명령
 
-EX) 큰 'ㄱ'자 그리기
+EX) 'ㄱ'자 그리기
     import turtle
     win = turtle.Screen() 
     t1= turtle.Turtle()
@@ -158,4 +154,21 @@ EX) 큰 'ㄱ'자 그리기
     
 10. 거북이 로봇 이동시키기
     -> 상대적 이동 : fd(100) : 현재 좌표를 기준으로 앞으로 이동
-    -> 절대적 이동 : goto(x,y) : 원점을 기준으로 좌표(
+    -> 절대적 이동 : goto(x,y) : 원점을 기준으로 절대좌표(x,y)로 이동
+    -> EX) import turtle
+           win = turtle.Screen()
+           t1 = turtle.Turtle()
+           t1.goto(100, 100)
+
+11. 거북이 로봇의 모양 원하는 이미지로 지정하기
+    -> EX) import turtle
+           win = turtle.Screen()
+           t1 = turtle.Turtle()
+           
+           win.addshape("dog.gif")   //캔버스 윈도우에 이미지 파일 추가
+           t1.shape("dog.gif")       //캔버스 윈도우에서 거북이 이미지 선택
+           t1.forward(100)
+           t1.right(90)
+           t1.forward(100)
+    -> ★ 주의할 점 : addshape()명령을 이용해서 바뀐 거북이 로봇은 기존에 있던 이미지와는 다르게 거북이 로봇이 회전하더라도 이미지 방향은 그대로.
+                   : 이미지 파일이 소스코드가 있는 폴더 안에 같이 있어야 한다.
