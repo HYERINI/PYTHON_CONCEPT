@@ -60,3 +60,52 @@
           day = "three"
           "I ate %d apples. so I was sick for %s days." % (number, day)
           __ 'I ate 10 apples. so I was sick for three days.'
+          
+-- 포맷 코드와 숫자 함께 사용하기
+   -> 정렬과 공백
+      EX) "%10s" % "hi"
+         ___'        hi'           //전체 길이가 10개인 문자열 공간에서 대입되는 값을 오른쪽으로 정렬
+                                     그 앞의 나머지는 공백으로 남겨둠
+      EX) "%-10sjane." % 'hi'
+         ___'hi      jane.'        //hi 왼쪽 정렬, 나머지는 공백으로 채움
+       
+   -> 소수점 표현하기
+      EX) "%0.4f" % 3.424252
+         ___'3.4242'               // 소수점 네 번째 자리까지만 나타냄
+         
+-- format 함수를 사용한 포매팅
+   -> 숫자 바로 대입하기
+      EX) "I eat {0} apples.".format(3)
+         ___ 'I eat 3 apples'                //{0} 부분이 3으로 바뀐다
+       
+   -> 문자열 바로 대입하기
+      EX) "I eat {0} apples".format("five")
+         ___ 'I eat five apples'             //{0} 부분이 five로 바뀐다
+         
+   -> 숫자 값을 가진 변수로 대입하기
+      EX) number = 3
+          "I eat {0} apples.".format(number)
+          ___ 'I eat 3 apples'               //{0} 부분이 number 변수 값인 3으로 바뀐다
+          
+   -> 2개 이상의 값 넣기
+      EX) number = 10
+          number1 = "three"
+          "I ate {0} apples and {1} bananas.".format(number, number1)
+          ___ 'I ate 10 apples and three bananas.'                    //문자열의 {0},{1}과 같은 인덱스 항목이 순서에 맞게 바뀜
+          
+   -> 이름으로 넣기
+      EX) "I ate {number} apples and {number1} bananas.".format(number = 10, number1 = 3)
+         ___'I ate 10 apples and three bananas.'                     //인덱스 대신 이름 사용
+        
+   -> 혼용 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
