@@ -14,4 +14,7 @@
                    finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while
 
 
-
+변수 생성하기
+-> 변수 : 객체를 가리키는 것
+-> =(assignment) 기호 사용
+-> 변수 이름 = 변수에 저장할 값    // 파이썬은 변수에 저장된 값을 스스로 판단하여 자료형을 지정한다.
