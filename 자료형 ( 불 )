@@ -1,0 +1,22 @@
+불 ( bool )    : 참(True)과 거짓(False)을 나타내는 자료형
+               : 조건문의 반환 값으로도 사용된다.
+               : 문자열, 리스트, 튜플, 딕셔너리 등의 값이 비어있으면 거짓이 된다.
+               : None -> 거짓
+               
+EX1) bool([1,2,3]) 
+     ___ True
+     
+EX2) bool([])
+     ___ False
+     
+EX3) bool(0)
+     ___ False
+     
+EX4) bool(3)
+     ___ True
+   
+EX5) bool('python')
+     ___ True
+     
+EX6) bool('')
+     ___ False
