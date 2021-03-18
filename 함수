@@ -1,0 +1,10 @@
+1. 함수의 구조
+
+   -> def 함수명(매개변수):
+          수행할 문장1
+          수행할 문장1
+          ...
+   -> EX) def add(a,b)
+              return a + b
+        
+2. 매개변수(parameter)와 인수(argument)
