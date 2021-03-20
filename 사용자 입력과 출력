@@ -1,0 +1,29 @@
+1. 사용자 입력
+
+[input]  입력되는 모든 것을 문자열로 취급한다.
+EX) a = input()
+    Life is too short, you need python
+    a
+    ___ 'Life is too short, you need python'
+    
+2. 프롬프트를 띄워서 사용자 입력받기
+
+-> input("질문내용")
+-> EX) number = input("숫자를 입력하세요: ")
+       __ 숫자를 입력하세요: 
+       //여기서 3입력한 후 print(number) 출력하면 3 돌려줌.
+       
+3. print문
+
+-> 큰따옴표(")로 둘러싸인 문자열은 + 연산과 동일하다.
+   EX) print("life" "is" "too short")
+       ___ lifeistoo short
+       
+-> 문자열 띄어쓰기는 콤마로 한다.
+   EX) print("life", "is", "too short")
+       ___ life is too short
+       
+-> 한 줄에 결괏값 출력하는 방법 : 매개변수 end를 사용해 끝 문자를 지정한다.
+   EX) for i in range(10):
+          print(i, end=' ')
+       ___ 0 1 2 3 4 5 6 7 8 9
